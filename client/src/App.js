@@ -13,7 +13,7 @@ import {
 } from '@app/components';
 import '@app/App.css';
 
-function App() {
+function App () {
   const { isLoading } = useAuth0();
 
   // Auth0 provides an isLoading boolean, useful to load a spinner while authenticating.

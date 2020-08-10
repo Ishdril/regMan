@@ -1,44 +1,68 @@
 {
-  "name": "client",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@auth0/auth0-react": "^1.0.0",
-    "@craco/craco": "^5.6.4",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "chart.js": "^2.9.3",
-    "dotenv": "^8.2.0",
-    "faker": "^4.1.0",
-    "moment": "^2.27.0",
-    "react": "^16.13.1",
-    "react-chartjs-2": "^2.9.0",
-    "react-dom": "^16.13.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "react-switch": "^5.0.1"
-  },
+  "name": "regman",
+  "version": "0.0.1",
+  "description": "A CRM tool for handling small registration processes",
+  "main": "index.js",
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "test:coverage": "npm test -- --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "test": "cd client && npm run test:coverage",
+    "postinstall": "(cd server && npm install); (cd client && npm install)",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.(js|jsx|ts|tsx|html|css|json|)\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishdril/regMan.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+  "author": "Bernat Duran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ishdril/regMan/issues"
+  },
+  "homepage": "https://github.com/Ishdril/regMan#readme",
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "build",
+        "ci"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPatternErrorMsg": "Subject must be in format 'CMS-123 - Commit message'",
+      "helpMessage": ""
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm test",
+      "commit-msg": "validate-commit-msg"
+    }
+  },
+  "lint-staged": {
+    "**/*.(js|jsx|ts|tsx|html|css|json|)": [
+      "npm run format"
     ]
-  }
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {}
 }
