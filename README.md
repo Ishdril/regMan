@@ -1,27 +1,53 @@
 # regMan
 
+### Introduction
+
 regMan is a CRM to manage registrations for summer camps and other small courses. Right now it is built to match the specific needs o Crisol de Cuerda summer camp in Spain (www.crisoldecuerda.com) but it can be easily adapted to match the needs of any other course.
+
+regMan offers a simple public-access registration form for anyone wishing to attend the course and an administration section that allows the organisers to manage the registration status of each participant, control their payment status and send status updates to the participants using email.
 
 <img src="./client/public/Screenshot 2020-08-28 at 16.45.18.png" alt="Screenshot 2020-08-28 at 16.45.18" style="zoom:50%;" />
 
 <img src="./client/public/Screenshot 2020-08-28 at 16.46.03.png" alt="Screenshot 2020-08-28 at 16.46.03" style="zoom:50%;" />
 
-<img src="./client/public/Screenshot 2020-08-28 at 16.46.15.png" alt="Screenshot 2020-08-28 at 16.46.15" style="zoom:50%;" />
+<img src="/Users/berni/Desktop/Codeworks/main-course/solo-project/regMan/client/public/Screenshot 2020-08-28 at 18.03.54.png" alt="Screenshot 2020-08-28 at 18.03.54" style="zoom:50%;" />
 
-regMan is composed of backend and frontend servers that handle the user information from the website to the database. Checkout the backend server in this repository:
 
-2 separate installations are requiered: one for the backend and one for the frontend.
-Go to the server and run `npm i`.
-Go to the client and run `npm i`.
 
-Install Postgres and have it running in the default port.
-Sequelize will initiate a db called 'crisoltest_db'. Feel free to change it at your convenience.
+Checkout a video demo of the app on [youtube](https://www.youtube.com/watch?v=D84fCTPduDY)
 
-After this, run `npm start` in both the client and the server. The client uses CRACO to handle internal paths for the components. If you don't start the project with npm start, it won't work.
-In each folder you'll find a copy of the .env file with some mock data.
+### Getting started? 
 
-In the .env.copy of the server, you'll find the JWT details for the auth0. Since they're for a mock program, feel free to use them. It might make things easier for you :)
+##### Here's what you should do:
 
-Same with the .env file of the client.
+regMan is composed of backend and frontend servers that handle the user information from the website to the database.
 
-Thanks for picking up this project!! I'm really happy ^\_^
+To get the program started, follow the next steps:
+
+1. From the root directory, run `npm i`. This will install the necessary dependencies in both the client and server folders, as well as some global ones.
+2. Install and run a postgreSQL database using the default port. When the project runs, Sequelize will initiate a db called 'crisoltest_db' automatically. This name can be changed to suit your project's needs.
+3. From the root directory, run `npm start`. This will fire up the server process and the client.
+
+In the client  and server folders, you'll find copies of the .env files with mock data to help you with the .env file structure.
+
+### Tech stack:
+
+##### Frontend:
+
+- [React](https://reactjs.org/)
+
+- [React-Router](https://reactrouter.com/)
+- [Auth0](https://auth0.com/) 
+- [Chart.js](https://www.chartjs.org/) 
+- [React-Switch](https://github.com/markusenglund/react-switch)
+
+##### Backend:
+
+- [Express.js](https://expressjs.com/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Sequelize](https://sequelize.org/)
+- [NodeMailer](https://nodemailer.com/)
+
+### Author
+
+Bernat Duran - [Github](https://github.com/Ishdril) - [Linkedin](www.linkedin.com/in/bernat-duran)
