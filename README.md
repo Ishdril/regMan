@@ -1,5 +1,14 @@
 # regMan
-CRM to manage registrations to summer camps
+
+regMan is a CRM to manage registrations for summer camps and other small courses. Right now it is built to match the specific needs o Crisol de Cuerda summer camp in Spain (www.crisoldecuerda.com) but it can be easily adapted to match the needs of any other course.
+
+![Screenshot 2020-08-28 at 16.45.18](./client/public/Screenshot 2020-08-28 at 16.45.18.png)
+
+<img src="./client/public/Screenshot 2020-08-28 at 16.46.03.png" alt="Screenshot 2020-08-28 at 16.46.03" style="zoom:50%;" />
+
+<img src="./client/public/Screenshot 2020-08-28 at 16.46.15.png" alt="Screenshot 2020-08-28 at 16.46.15" style="zoom:50%;" />
+
+regMan is composed of backend and frontend servers that handle the user information from the website to the database. Checkout the backend server in this repository:
 
 2 separate installations are requiered: one for the backend and one for the frontend.
 Go to the server and run `npm i`.
@@ -15,4 +24,4 @@ In the .env.copy of the server, you'll find the JWT details for the auth0. Since
 
 Same with the .env file of the client.
 
-Thanks for picking up this project!! I'm really happy ^_^
+Thanks for picking up this project!! I'm really happy ^\_^
