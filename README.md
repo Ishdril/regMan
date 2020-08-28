@@ -2,7 +2,7 @@
 
 regMan is a CRM to manage registrations for summer camps and other small courses. Right now it is built to match the specific needs o Crisol de Cuerda summer camp in Spain (www.crisoldecuerda.com) but it can be easily adapted to match the needs of any other course.
 
-![Screenshot 2020-08-28 at 16.45.18](./client/public/Screenshot 2020-08-28 at 16.45.18.png)
+<img src="./client/public/Screenshot 2020-08-28 at 16.45.18.png" alt="Screenshot 2020-08-28 at 16.45.18" style="zoom:50%;" />
 
 <img src="./client/public/Screenshot 2020-08-28 at 16.46.03.png" alt="Screenshot 2020-08-28 at 16.46.03" style="zoom:50%;" />
 
