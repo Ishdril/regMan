@@ -14,13 +14,15 @@ regMan offers a simple public-access registration form for anyone wishing to att
 
 
 
-Checkout a video demo of the app on [youtube](https://www.youtube.com/watch?v=D84fCTPduDY)
+Checkout a video demo of the app on [youtube](https://www.youtube.com/watch?v=D84fCTPduDY):
 
-```none
-[![Watch the video](https://img.youtube.com/vi/D84fCTPduDY/maxresdefault.jpg)](https://youtu.be/D84fCTPduDY)
-```
+[![Watch the video](https://img.youtube.com/vi/D84fCTPduDY/hqdefault.jpg)](https://youtu.be/D84fCTPduDY)
+
+
 
 ### Getting started? 
+
+------
 
 ##### Here's what you should do:
 
@@ -34,7 +36,11 @@ To get the program started, follow the next steps:
 
 In the client  and server folders, you'll find copies of the .env files with mock data to help you with the .env file structure.
 
+
+
 ### Tech stack:
+
+------
 
 ##### Frontend:
 
@@ -52,6 +58,10 @@ In the client  and server folders, you'll find copies of the .env files with moc
 - [Sequelize](https://sequelize.org/)
 - [NodeMailer](https://nodemailer.com/)
 
+
+
 ### Author
+
+------
 
 Bernat Duran - [Github](https://github.com/Ishdril) - [Linkedin](www.linkedin.com/in/bernat-duran)
