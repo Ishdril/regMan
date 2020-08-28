@@ -10,11 +10,15 @@ regMan offers a simple public-access registration form for anyone wishing to att
 
 <img src="./client/public/Screenshot 2020-08-28 at 16.46.03.png" alt="Screenshot 2020-08-28 at 16.46.03" style="zoom:50%;" />
 
-<img src="/Users/berni/Desktop/Codeworks/main-course/solo-project/regMan/client/public/Screenshot 2020-08-28 at 18.03.54.png" alt="Screenshot 2020-08-28 at 18.03.54" style="zoom:50%;" />
+<img src="./client/public/Screenshot 2020-08-28 at 18.03.54.png" alt="Screenshot 2020-08-28 at 18.03.54" style="zoom:50%;" />
 
 
 
 Checkout a video demo of the app on [youtube](https://www.youtube.com/watch?v=D84fCTPduDY)
+
+```none
+[![Watch the video](https://img.youtube.com/vi/D84fCTPduDY/maxresdefault.jpg)](https://youtu.be/D84fCTPduDY)
+```
 
 ### Getting started? 
 
