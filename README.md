@@ -1,6 +1,4 @@
-# regMan
-
-[![GitHub license](https://img.shields.io/github/license/Ishdril/regMan)](https://github.com/Ishdril/regMan/blob/develop/LICENSE)[![GitHub release](https://img.shields.io/github/release/Ishdril/regMan)](https://github.com/Ishdril/regMan/releases/latest)[![GitHub contributors](https://img.shields.io/github/contributors/Ishdril/regMan)](https://github.com/Ishdril/regMan/graphs/contributors)[![GitHub issues](https://img.shields.io/github/issues/Ishdril/regMan)](https://GitHub.com/Ishdril/regMan/issues)
+<img src="/Users/berni/Desktop/Codeworks/main-course/solo-project/regMan/client/public/regman-logo-wide.png" alt="regman-logo-wide" style="width: 100%;" />[![GitHub license](https://img.shields.io/github/license/Ishdril/regMan)](https://github.com/Ishdril/regMan/blob/develop/LICENSE)[![GitHub release](https://img.shields.io/github/release/Ishdril/regMan)](https://github.com/Ishdril/regMan/releases/latest)[![GitHub contributors](https://img.shields.io/github/contributors/Ishdril/regMan)](https://github.com/Ishdril/regMan/graphs/contributors)[![GitHub issues](https://img.shields.io/github/issues/Ishdril/regMan)](https://GitHub.com/Ishdril/regMan/issues)
 
 ### Introduction
 
