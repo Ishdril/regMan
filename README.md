@@ -1,5 +1,7 @@
 # regMan
 
+[![GitHub license](https://img.shields.io/github/license/Ishdril/regMan)](https://github.com/Ishdril/regMan/blob/develop/LICENSE)[![GitHub release](https://img.shields.io/github/release/Ishdril/regMan)](https://github.com/Ishdril/regMan/releases/latest)[![GitHub contributors](https://img.shields.io/github/contributors/Ishdril/regMan)](https://github.com/Ishdril/regMan/graphs/contributors)[![GitHub issues](https://img.shields.io/github/issues/Ishdril/regMan)](https://GitHub.com/Ishdril/regMan/issues)
+
 ### Introduction
 
 regMan is a CRM to manage registrations for summer camps and other small courses. Right now it is built to match the specific needs o Crisol de Cuerda summer camp in Spain (www.crisoldecuerda.com) but it can be easily adapted to match the needs of any other course.
