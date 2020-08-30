@@ -1,0 +1,24 @@
+{
+  "instruments": [
+    {
+      "name": "Fiddle",
+      "max_attendants": 15
+    },
+    {
+      "name": "Cello",
+      "max_attendants": 10
+    },
+    {
+      "name": "Guitar",
+      "max_attendants": 10
+    },
+    {
+      "name": "Flute",
+      "max_attendants": 8
+    },
+    {
+      "name": "Fiddle Beginner",
+      "max_attendants": 5
+    }
+  ]
+}
