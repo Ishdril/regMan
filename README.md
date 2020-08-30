@@ -12,17 +12,13 @@ regMan offers a simple public-access registration form for anyone wishing to att
 
 <img src="./client/public/Screenshot 2020-08-28 at 18.03.54.png" alt="Screenshot 2020-08-28 at 18.03.54" style="zoom:50%;" />
 
-
-
 Checkout a video demo of the app on [youtube](https://www.youtube.com/watch?v=D84fCTPduDY):
 
 [![Watch the video](https://img.youtube.com/vi/D84fCTPduDY/hqdefault.jpg)](https://youtu.be/D84fCTPduDY)
 
+### Getting started?
 
-
-### Getting started? 
-
-------
+---
 
 ##### Here's what you should do:
 
@@ -31,24 +27,22 @@ regMan is composed of backend and frontend servers that handle the user informat
 To get the program started, follow the next steps:
 
 1. From the root directory, run `npm i`. This will install the necessary dependencies in both the client and server folders, as well as some global ones.
-2. Install and run a postgreSQL database using the default port. When the project runs, Sequelize will initiate a db called 'crisoltest_db' automatically. This name can be changed to suit your project's needs.
-3. From the root directory, run `npm start`. This will fire up the server process and the client.
+2. Install and run a postgreSQL database using the default port.
+3. From the root directory, run `npm run dbStart`. This will generate the database and seed the initial data for the project.
+4. Finally, from the root directory, run `npm start`. This will fire up the server process and the client.
 
-In the client  and server folders, you'll find copies of the .env files with mock data to help you with the .env file structure.
-
-
+In the client and server folders, you'll find copies of the .env files with mock data to help you with the .env file structure.
 
 ### Tech stack:
 
-------
+---
 
 ##### Frontend:
 
 - [React](https://reactjs.org/)
-
 - [React-Router](https://reactrouter.com/)
-- [Auth0](https://auth0.com/) 
-- [Chart.js](https://www.chartjs.org/) 
+- [Auth0](https://auth0.com/)
+- [Chart.js](https://www.chartjs.org/)
 - [React-Switch](https://github.com/markusenglund/react-switch)
 
 ##### Backend:
@@ -58,10 +52,8 @@ In the client  and server folders, you'll find copies of the .env files with moc
 - [Sequelize](https://sequelize.org/)
 - [NodeMailer](https://nodemailer.com/)
 
-
-
 ### Author
 
-------
+---
 
 Bernat Duran - [Github](https://github.com/Ishdril) - [Linkedin](www.linkedin.com/in/bernat-duran)
