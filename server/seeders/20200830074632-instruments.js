@@ -10,7 +10,7 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date(),
     }));
-    return queryInterface.bulkInsert('Instruments', instruments, {});
+    return queryInterface.bulkInsert('instruments', instruments, {});
   },
 
   down: async () => {},

@@ -52,6 +52,5 @@
     "hooks": {
       "commit-msg": "validate-commit-msg"
     }
-  },
-  "dependencies": {}
+  }
 }
