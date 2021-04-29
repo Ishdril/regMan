@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 import LogoutButton from "./logout-button";
 import LoginButton from "./login-button";
-import './Navbar.css'
+import './Navbar.css';
 
 
 // navbar. sits at the top of the page. Rendering changes depending on the authentication

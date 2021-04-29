@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
-import ApiClient from '@/services/ApiClient';
+import ApiClient from '../../services/ApiClient';
 import moment from 'moment';
-import { Navbar } from '@/components';
-import './Form.css'
+import Navbar from '../Resources/Navbar/Navbar';
+import './Form.css';
 
 // default value for the form
 const newRegistration = {

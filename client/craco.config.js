@@ -10,7 +10,7 @@ module.exports = {
   jest: {
     configure: {
       moduleNameMapper: {
-        '^@(.*)$': '<rootDir>/src$1'
+        // '^@(.*)$': '<rootDir>/src/components/Form/$1'
       }
     }
   }
