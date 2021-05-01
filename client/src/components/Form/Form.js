@@ -88,6 +88,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="first_name"
+                      title="first_name"
                       className="form-input"
                       value={registration.first_name}
                       onChange={handleChange}
@@ -99,6 +100,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="last_name"
+                      title="last_name"
                       className="form-input"
                       value={registration.last_name}
                       onChange={handleChange}
@@ -110,6 +112,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="email"
+                      title="email"
                       className="form-input"
                       value={registration.email}
                       onChange={handleChange}
@@ -123,6 +126,7 @@ const Form = () => {
                       min="1900-01-01"
                       max="2020-12-31"
                       name="date_of_birth"
+                      title="date_of_birth"
                       className="form-input"
                       value={registration.date_of_birth}
                       onChange={handleChange}
@@ -141,6 +145,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="street"
+                      title="street"
                       className="form-input"
                       value={registration.street}
                       onChange={handleChange}
@@ -152,6 +157,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="city"
+                      title="city"
                       className="form-input"
                       value={registration.city}
                       onChange={handleChange}
@@ -163,6 +169,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="country"
+                      title="country"
                       className="form-input"
                       value={registration.country}
                       onChange={handleChange}
@@ -200,6 +207,7 @@ const Form = () => {
                     <input
                       type="text"
                       name="allergies"
+                      title="allergies"
                       className="form-input"
                       value={registration.allergies}
                       onChange={handleChange}
@@ -217,6 +225,7 @@ const Form = () => {
                     <input
                       type="checkbox"
                       name="accepts_tos"
+                      title="accepts_tos"
                       className="form-checkbox"
                       checked={registration.accepts_tos}
                       onChange={handleChange}
