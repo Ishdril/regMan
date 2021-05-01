@@ -228,7 +228,7 @@ const Form = () => {
               </div>
               <div className="form-btns">
                 <button type="submit">Send my registration</button>
-                <button className="clear-form" onClick={clearForm}>Clear Form</button>
+                <button type="button" className="clear-form" onClick={clearForm}>Clear Form</button>
               </div>
             </form>
           </div>
