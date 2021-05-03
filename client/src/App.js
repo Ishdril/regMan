@@ -28,7 +28,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Form} />
           <Route path="/confirmation" exact component={Confirmation} />
-          <Route path="/dashboard" exact component={Confirmation}><Redirect to="/dashboard/list" /></Route>
+          <Route path="/dashboard" exact><Redirect to="/dashboard/list" /></Route>
           <PrivateRoute path="/dashboard/list" component={Dashboard} />
           <Route path="/error500" exact component={Error500} />
           <Route path="/" component={Error404} />
