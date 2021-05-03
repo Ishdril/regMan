@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 import ApiClient from '@/services/ApiClient';
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { Route, Redirect } from 'react-router-dom';
 import './Dashboard.css'
-import {  Popup, ParticipantList, GroupsDisplay, ParticipantDetails, Navbar, Error500} from '@/components';
+import { Popup, ParticipantList, GroupsDisplay, ParticipantDetails, Error500, PrivateRoute }
+from '@/components';
 
 // Acts as the main page for logged in users. It has its own router.
 const Dashboard = () => {
@@ -75,40 +76,39 @@ const Dashboard = () => {
   if (error) return (<Redirect to={'/error500'} />)
 
   return (
-    <div>
+    <div className="dashboard">
+
       {/* displays popups */}
       {popupBackground}
-      <Router>
-        {/* Navbar has to be inside the router when it's redirecting, otherwise it will render a white page because the route is not found.
-        TODO: check out if there's better ways to implement nested routers. */}
-        <Navbar />
-        <div className="dashboard">
-          <Route path="/dashboard/list" exact render={(props) => (
-            <ParticipantList
-              {...props}
-              participants={participants}
-              promptPopup={promptPopup}
-            />)}
-          />
-          {/* Only participants who are not cancelled or on the waitlist get handled to the groups component for statistics. */}
-          <Route path="/dashboard/groups" exact render={(props) => (
-            <GroupsDisplay
-              {...props}
-              participants={participants.filter(participant => (participant.registration_status !== 'Cancelled' && participant.registration_status !== 'Waitlist'))}
-              instruments={instruments}
-              setInstruments={setInstruments}
-            />)}
-          />
-          <Route path="/dashboard/details/:id/:section" exact render={(props) => (
-            <ParticipantDetails
-              {...props}
-              setParticipants={setParticipants}
-              instruments={instruments}
-            />)}
-          />
-          <Route path="/error500" component={Error500} />
-        </div>
-      </Router>
+
+      <Route path="/dashboard/list" exact render={(props) => (
+        <ParticipantList
+          {...props}
+          participants={participants}
+          promptPopup={promptPopup}
+        />)}
+      />
+
+      {/* Only participants who are not cancelled or on the waitlist get handled to the groups component for statistics. */}
+      <Route path="/dashboard/groups" exact render={(props) => (
+        <GroupsDisplay
+          {...props}
+          participants={participants.filter(participant => (participant.registration_status !== 'Cancelled' && participant.registration_status !== 'Waitlist'))}
+          instruments={instruments}
+          setInstruments={setInstruments}
+        />)}
+      />
+
+      <Route path="/dashboard/details/:id/:section" exact render={(props) => (
+        <ParticipantDetails
+          {...props}
+          setParticipants={setParticipants}
+          instruments={instruments}
+        />)}
+      />
+
+      <Route path="/error500" component={Error500} />
+
     </div>
   );
 }

@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 
 import {
+  Navbar,
   Confirmation,
   Dashboard,
   Error404,
@@ -23,10 +24,12 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Switch>
           <Route path="/" exact component={Form} />
           <Route path="/confirmation" exact component={Confirmation} />
-          <PrivateRoute path="/dashboard" component={Dashboard} />
+          <Route path="/dashboard" exact component={Confirmation}><Redirect to="/dashboard/list" /></Route>
+          <PrivateRoute path="/dashboard/list" component={Dashboard} />
           <Route path="/error500" exact component={Error500} />
           <Route path="/" component={Error404} />
         </Switch>

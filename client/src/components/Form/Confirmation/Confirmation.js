@@ -1,12 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Confirmation.css';
-import { Navbar } from '@/components/';
 
 const Confirmation = () => {
   return (
     <div>
-      <Navbar />
       <div className="confirmation-container">
         <div className="confirmation">
           <div className="confirmation-text">
