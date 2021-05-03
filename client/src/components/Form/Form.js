@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import ApiClient from '../../services/ApiClient';
 import moment from 'moment';
+import Navbar from '../Resources/Navbar/Navbar';
 import './Form.css';
+import { useSelector, useDispatch } from 'react-redux';
 
 // default value for the form
 const newRegistration = {
@@ -26,11 +28,24 @@ const Form = () => {
   const [instruments, setInstruments] = useState([]);
   const [error, setError] = useState(false);
 
+  // const instruments = useSelector(state => state.instruments);
+  // const dispatch = useDispatch();
+
+  // dispatch({
+  //   type: "type",
+  //   payload: [],
+  // });
+
   useEffect(() => {
-    ApiClient.getInstruments()
+    if (!instruments.length) ApiClient.getInstruments()
       .then(instruments => {
         if (instruments.error) setError(true);
-        else setInstruments(instruments)})
+      //   else dispatch({
+      //     type: "type",
+      //     payload: instruments,
+      //   });
+      // });
+        else setInstruments(instruments)});
   }, []);
 
   useEffect(() => {
@@ -57,7 +72,6 @@ const Form = () => {
 
   function clearForm () {
     setRegistration(newRegistration);
-    document.getElementsByClassName("main-page")[0].scroll(0,0);
   }
 
   // handles errirs with the API calls or redirects the user to the confirmation page.
@@ -66,6 +80,7 @@ const Form = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="main-page">
         <div className="form-container">
           <div className="black-bg"></div>

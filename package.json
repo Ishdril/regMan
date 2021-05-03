@@ -52,5 +52,9 @@
     "hooks": {
       "commit-msg": "validate-commit-msg"
     }
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "react-redux": "^7.2.4"
   }
 }
