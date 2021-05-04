@@ -4,12 +4,15 @@ const initialState = [];
 
 const instrumentsSlice = createSlice({
   name: "instruments",
-  initialState,
+  initialState: initialState,
   reducers: {
     setInstruments: (state, action) => {
-      state.set(action.payload);
+      state = action.payload;
+      return state;
     },
   },
 });
 
-export default instrumentsSlice.reducers;
+// export const { setInstruments } = instrumentsSlice.actions;
+// export const selectInstruments = (state) => state.instruments;
+export default instrumentsSlice.reducer;

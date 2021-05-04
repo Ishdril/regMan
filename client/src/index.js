@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Auth0ProviderWithHistory } from "@/components";
-import { Provider } from 'react-redux';
-import store from "@/redux/store";
-
-
 import './index.css';
-
 import App from './App';
-require('dotenv').config();
+
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
 
 // Auth0ProviderWithHistory provides access to Auth0 tokens throughout the application
 ReactDOM.render(

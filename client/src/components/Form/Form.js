@@ -25,33 +25,28 @@ const Form = () => {
   const [registration, setRegistration] = useState(newRegistration);
   // when set to true, will render the confirmation page.
   const [redirectToConfirmation, setRedirect] = useState(false);
-  const [instruments, setInstruments] = useState([]);
+  // const [instruments, setInstruments] = useState([]);
   const [error, setError] = useState(false);
 
-  // const instruments = useSelector(state => state.instruments);
-  // const dispatch = useDispatch();
-
-  // dispatch({
-  //   type: "type",
-  //   payload: [],
-  // });
+  const instruments = useSelector(state => state.instruments);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!instruments.length) ApiClient.getInstruments()
-      .then(instruments => {
-        if (instruments.error) setError(true);
-      //   else dispatch({
-      //     type: "type",
-      //     payload: instruments,
-      //   });
-      // });
-        else setInstruments(instruments)});
+    if (!instruments.length) {
+      ApiClient.getInstruments()
+        .then(res => {
+          if (res.error) setError(true);
+          else dispatch({
+            type: "instruments/setInstruments",
+            payload: res,
+          });
+        });
+    }
+    if (instruments.length) {
+      const fiddle = instruments.filter(instrument => instrument.name === 'Fiddle')[0];
+      fiddle && setRegistration(registration => ({...registration, instrumentId: fiddle.id}));
+    }
   }, []);
-
-  useEffect(() => {
-    const fiddle = instruments.filter(instrument => instrument.name === 'Fiddle')[0];
-    fiddle && setRegistration(registration => ({...registration, instrumentId: fiddle.id}))
-  }, [instruments]);
 
   function submitHandler (e) {
     e.preventDefault();
